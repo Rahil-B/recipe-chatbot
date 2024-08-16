@@ -10,7 +10,7 @@ def generate_search_links(query):
 
 def parse_query(query):
     doc = nlp(query.lower())
-    print(doc.ents,query)
+    #print(doc.ents,query)
     # Check for step navigation commands first
     if re.search(r'\b(next|previous|repeat|prev)\b', query, re.I):
         if 'next' in query:
